@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import CardList from "./CardList";
 import SearchBox from "./SearchBox";
+import Scroll from "./Scroll";
 import "./App.css";
 
 // any component that owns state uses class syntax so they can use constructor function to create
@@ -46,7 +47,9 @@ class App extends Component {
         <div className="tc">
           <h1 className="f1">Kitty Friends</h1>
           <SearchBox searchChange={this.onSearchChange} />
-          <CardList kittens={filteredKittens} />
+          <Scroll>
+            <CardList kittens={filteredKittens} />
+          </Scroll>
         </div>
       );
     }
