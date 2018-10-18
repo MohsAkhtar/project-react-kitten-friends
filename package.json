@@ -4,11 +4,13 @@
   "private": true,
   "homepage": "https://mohsakhtar.github.io/project-react-kitten-friends/",
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-redux": "^5.0.7",
     "react-scripts": "2.0.5",
-    "tachyons": "^4.11.1",
-    "gh-pages": "^1.2.0"
+    "redux": "^4.0.1",
+    "tachyons": "^4.11.1"
   },
   "scripts": {
     "deploy": "npm run build&&gh-pages -d build",

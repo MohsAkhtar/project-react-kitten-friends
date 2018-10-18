@@ -18,7 +18,7 @@ class App extends Component {
 
   // on mounting we update kittens array by fetching data from jsonplaceholder api
   componentDidMount() {
-    fetch("http://jsonplaceholder.typicode.com/users")
+    fetch("https://jsonplaceholder.typicode.com/users")
       .then(response => {
         return response.json();
       })
