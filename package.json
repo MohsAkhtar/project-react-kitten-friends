@@ -2,14 +2,16 @@
   "name": "project-react-robofriends",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mohsakhtar.github.io/project-react-robo-friends/",
+  "homepage": "https://mohsakhtar.github.io/project-react-kitten-friends/",
   "dependencies": {
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts": "2.0.5",
-    "tachyons": "^4.11.1"
+    "tachyons": "^4.11.1",
+    "gh-pages": "^1.2.0"
   },
   "scripts": {
+    "deploy": "npm run build&&gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
