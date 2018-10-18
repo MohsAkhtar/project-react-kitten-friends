@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import CardList from "../components/CardList";
 import SearchBox from "../components/SearchBox";
 import Scroll from "../components/Scroll";
+import ErrorBoundary from "../components/ErrorBoundary";
 import "./App.css";
 
 // any component that owns state uses class syntax so they can use constructor function to create
@@ -47,7 +48,9 @@ class App extends Component {
           <h1 className="f1">Kitty Friends</h1>
           <SearchBox searchChange={this.onSearchChange} />
           <Scroll>
-            <CardList kittens={filteredKittens} />
+            <ErrorBoundary>
+              <CardList kittens={filteredKittens} />
+            </ErrorBoundary>
           </Scroll>
         </div>
       );
