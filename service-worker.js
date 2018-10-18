@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/project-react-robo-friends/precache-manifest.87157ce60cbf9b0bab33f07ffda654a1.js"
+  "/project-react-kitten-friends/precache-manifest.52ec7469f26fcf1dbed2ba78264d172c.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/project-react-robo-friends/index.html", {
+workbox.routing.registerNavigationRoute("/project-react-kitten-friends/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
