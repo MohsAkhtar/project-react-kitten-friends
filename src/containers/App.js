@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import CardList from "./CardList";
-import SearchBox from "./SearchBox";
-import Scroll from "./Scroll";
+import CardList from "../components/CardList";
+import SearchBox from "../components/SearchBox";
+import Scroll from "../components/Scroll";
 import "./App.css";
 
 // any component that owns state uses class syntax so they can use constructor function to create
@@ -35,12 +35,11 @@ class App extends Component {
   };
 
   render() {
-    const filteredKittens = this.state.kittens.filter(kitten => {
-      return kitten.name
-        .toLowerCase()
-        .includes(this.state.searchfield.toLowerCase());
+    const { kittens, searchfield } = this.state;
+    const filteredKittens = kittens.filter(kitten => {
+      return kitten.name.toLowerCase().includes(searchfield.toLowerCase());
     });
-    if (this.state.kittens.length === 0) {
+    if (kittens.length === 0) {
       return <h1 className="tc">Loading</h1>;
     } else {
       return (
