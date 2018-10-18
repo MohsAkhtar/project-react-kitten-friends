@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/project-react-kitten-friends/precache-manifest.52ec7469f26fcf1dbed2ba78264d172c.js"
+  "/project-react-kitten-friends/precache-manifest.0f06c7ba2894fc257de7b392eb33ed5a.js"
 );
 
 workbox.clientsClaim();
