@@ -1,16 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Provider, connect } from "react-redux";
-import { createStore } from "redux";
+import { Provider } from "react-redux";
+import { createStore, applyMiddleware, combineReducers } from "redux";
+import { createLogger } from "redux-logger";
+import thunkMiddleware from "redux-thunk";
 import "./index.css";
 import App from "./containers/App";
 import * as serviceWorker from "./serviceWorker";
 import "tachyons";
-import { searchKittens } from "./reducers";
+import { searchKittens, requestKittens } from "./reducers";
 
-// Usually use rootReducer but we only have one reducer so far in app
+const logger = createLogger();
+
+const rootReducer = combineReducers({ searchKittens, requestKittens });
+
 // we use the store to store all state and pass it down as a prop
-const store = createStore(searchKittens);
+const store = createStore(
+  rootReducer,
+  applyMiddleware(thunkMiddleware, logger)
+);
 
 // Provider component passes down store
 ReactDOM.render(
