@@ -8,23 +8,23 @@ self.__precacheManifest = [
     "url": "/project-react-kitten-friends/static/js/runtime~main.0c850cd0.js"
   },
   {
-    "revision": "59cc072059db8a0ec2cf",
-    "url": "/project-react-kitten-friends/static/js/main.59cc0720.chunk.js"
+    "revision": "79660cb51632f8ee3d53",
+    "url": "/project-react-kitten-friends/static/js/main.79660cb5.chunk.js"
   },
   {
     "revision": "c57337f68c3125e9a723",
     "url": "/project-react-kitten-friends/static/js/1.c57337f6.chunk.js"
   },
   {
-    "revision": "59cc072059db8a0ec2cf",
-    "url": "/project-react-kitten-friends/static/css/main.893ae8b8.chunk.css"
+    "revision": "79660cb51632f8ee3d53",
+    "url": "/project-react-kitten-friends/static/css/main.4b93c5b6.chunk.css"
   },
   {
     "revision": "c57337f68c3125e9a723",
     "url": "/project-react-kitten-friends/static/css/1.6c5c8736.chunk.css"
   },
   {
-    "revision": "c40d00f83a556c52a8115c2823794a69",
+    "revision": "c892a52cb02b4a3c77f445c46f3b47d2",
     "url": "/project-react-kitten-friends/index.html"
   }
 ];
